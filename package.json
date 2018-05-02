@@ -1,0 +1,19 @@
+{
+  "name": "searchapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibrahim013/searchapp.git"
+  },
+  "author": "Ibrahim-Abdulazeez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibrahim013/searchapp/issues"
+  },
+  "homepage": "https://github.com/ibrahim013/searchapp#readme"
+}
