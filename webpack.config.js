@@ -1,7 +1,16 @@
 const path = require('path');
+const webpack = require('webpack');
+const dotEnv = require('dotenv');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const AutoPrefixer = require('autoprefixer');
+const parseVariables = dotEnv.config().parsed;
+const environmentVariables = {};
+
+// eslint-disable-next-line
+for (const envVar in parseVariables) {
+  environmentVariables[envVar] = JSON.stringify(parseVariables[envVar]);
+}
 
 const webpackConfig = {
   devtool: 'inline-source-map',
@@ -44,6 +53,13 @@ const webpackConfig = {
         ],
       },
       {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
+          'url-loader?limit=10000',
+          'img-loader',
+        ],
+      },
+      {
         test: /\.(css|sass|scss)$/,
         use: [
           MiniCssExtractPlugin.loader,
@@ -73,6 +89,9 @@ const webpackConfig = {
       },
     ],
   },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
   plugins: [
     new HtmlWebPackPlugin({
       template: './src/index.html',
@@ -80,6 +99,11 @@ const webpackConfig = {
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
+    }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        ...environmentVariables,
+      },
     }),
   ],
 };
