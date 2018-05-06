@@ -43,6 +43,9 @@
       .ui.cards{
         margin: 0;
       }
+      .ui.card, .ui.cards>.card {
+        max-width: 18%;
+    }
     }
       a {
         text-decoration: none;
@@ -97,7 +100,7 @@
       }
   
     .toplevel {
-      width: 35%;
+      width: 25%;
       position: relative;
       top:5rem;
       margin:0 auto;
@@ -146,9 +149,9 @@
          padding-right: 0.95rem;
         }
       }
-    }
-    
+    } 
   }
+ 
   .error-main {
     text-align: center;
    h1 {
@@ -178,6 +181,12 @@
         h3 { 
           font-size: 1rem;
           margin-top: 1.3rem;
+        }
+      }
+      .cat{
+          width:100%;
+        .ui.card, .ui.cards>.card {
+            max-width: 44.5%;
         }
       }
     }
