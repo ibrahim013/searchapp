@@ -1,12 +1,29 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const AutoPrefixer = require('autoprefixer');
 
 const webpackConfig = {
-  entry: './src/index.js',
+  devtool: 'inline-source-map',
+  entry: [
+    path.resolve(__dirname, './src/index'),
+  ],
+  target: 'web',
   output: {
+    path: path.join(__dirname, './dist/'), // Note: Physical files are only output by the production build task `npm run build`.
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
+  },
+  devServer: {
+    historyApiFallback: true,
+    contentBase: path.resolve(__dirname, './src'),
+    overlay: true,
+    open: true,
+    watchContentBase: true,
+    watchOptions: {
+      poll: true,
+      ignored: /node_modules/,
+    },
   },
   module: {
     rules: [
@@ -41,7 +58,7 @@ const webpackConfig = {
             loader: 'postcss-loader',
             options: {
               plugins: () => [
-                require('autoprefixer'),
+                AutoPrefixer,
               ],
               sourceMap: true,
             },
