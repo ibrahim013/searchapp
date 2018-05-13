@@ -4,6 +4,12 @@ import { SearchBox, SearchkitComponent } from 'searchkit';
 import isEmpty from 'lodash/isEmpty';
 
 class SearchPage extends SearchkitComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    };
+  }
   render() {
     const searchDataRaw = this.context.searchkit.state;
     const searchData = Object.values(searchDataRaw);
