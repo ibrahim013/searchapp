@@ -1,6 +1,6 @@
 **PriceBay**
 
-PriceBay is an online platform that provides its users with latest technology to compaire product price across multiple store
+PriceBay is an online platform that provides its users with latest technology to compare product price across multiple store
 
 **Product Vision**
 
