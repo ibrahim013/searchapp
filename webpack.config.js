@@ -103,6 +103,9 @@ const webpackConfig = {
     new webpack.DefinePlugin({
       'process.env': {
         ...environmentVariables,
+        NODE_ENV: JSON.stringify('production'),
+        CLUSTER_URL: JSON.stringify(process.env.CLUSTER_URL),
+        BASIC_AUTH: JSON.stringify(process.env.BASIC_AUTH),
       },
     }),
   ],
