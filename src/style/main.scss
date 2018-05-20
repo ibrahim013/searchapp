@@ -3,33 +3,37 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+
     .midlevel {
       flex: 1;
     }
     .result-header {
-      display:flex;
+      display: flex;
       align-items: center;
-      border-bottom: 1.5px solid whitesmoke;
-      
-      
+      border-bottom: 1.5px solid whitesmoke; 
     }
+
     .logo-holder {
-      width:10%;
+      width: 10%;
       margin: 1rem 2% 1.5rem 1.5rem;
-      img{
-        width:100%;
+      img {
+        width: 100%;
       }
+
     }
   
-    .result-sta{
+    .result-sta {
       margin: 0.7rem;
       margin-right: 5rem;
+
       .sk-hits-stats__info {
         font-size: 18px;
         color: #1c87cd;
       }
+
     }
-    .aside{
+
+    .aside {
       border: solid 2px red;
       min-width: 20%;
     }
@@ -40,17 +44,20 @@
     .cat {
       width: 71.6%;
       margin: 1rem auto;
-      .ui.cards{
+
+      .ui.cards {
         margin: 0;
-        .card:hover{
+
+        .card:hover {
           background-color: green;
           color: #E0E0E0;
-
         }
+
       }
+
       .ui.card, .ui.cards>.card {
         max-width: 18%;
-    }
+      }
     }
       a {
         text-decoration: none;
@@ -65,17 +72,21 @@
         background-color: #ffffff;
         height: 53px;
       }
-      .result{
+
+      .result {
         display: flex;
       }
+
       .sk-hits-grid-hit {
         max-width: 24%;
         flex: 24% 0 0;
         max-height: 350px;
       }
-      .sk-hits-grid-hit:hover{
+
+      .sk-hits-grid-hit:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
+
       .sk-hits-grid-hit__brand {
         border-bottom: solid 1px #1c87cd;
         width: 100%;
@@ -86,14 +97,18 @@
         font-size: 13px;
         color: black;
       }
-      .sk-action-bar-row{
+
+      .sk-action-bar-row {
         margin: 0.5rem 0 0 0.5rem;
       }
-      .sk-hits-grid-hit__imageUrl{
-        img{
+
+      .sk-hits-grid-hit__imageUrl {
+        img {
           max-height: 180px;
         }
+
       }
+
       .price {
         color: red;
       }
@@ -113,15 +128,17 @@
       img {
         width: 100%;
       }
+
     }
-    .search-contanier{
+    .search-contanier {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       width: 50%;
       position: relative;
       margin:5rem auto;
       margin-bottom: 0px;
     }
-    .hitvalue{
+
+    .hitvalue {
       max-width: 70%;
       margin: 0 auto;
     }
@@ -135,7 +152,8 @@
         width: 100%;
       }
     }
-    .slug{
+
+    .slug {
       h3 { 
         font-weight: bold;
         font-size: 1.40rem;
@@ -156,35 +174,53 @@
       }
     } 
   }
-  .page{
-    padding: 1.5rem;
-    font-size: 2rem;
+  .page {
+    width: 12%;
+    padding: 0.8rem 1.5rem;
+    margin-left: 5rem;
+
+    img {
+      width: 100%
+    }
   }
   
-  .page-details{
-    width:100%;
-    display:flex;
-    border-bottom: 1.5px solid whitesmoke;
-    position: fixed;
+  .page-details {
     background-color: #ffffff;
+    border-bottom: 1.5px solid whitesmoke;
+    display: flex;
+    position: fixed;
+    width: 100%;
     z-index: 1;
-    
   }
-  .page-info{
-    width:70%;
+
+  .page-info {
+    margin: 0 5rem;
+    padding: 1.5rem;
     position: relative;
-    top:6.5rem;
-    margin:0 auto;
+    top: 7rem;
+    width: 70%;
+
+    a {
+      color: #1c87cd;
+    }
+
   }
-  .search-grid{
+
+  .foot {
+    margin-top: 12rem;
+  }
+
+  .search-grid {
     width: 45%;
-    margin-top: 1rem;
+    margin-top: 1.9rem;
   }
+
   .error-main {
     text-align: center;
+
    h1 {
-     font-size:18rem;
      color: #1c87cd;
+     font-size: 18rem;
      font-weight: bold;
     }
     p{
@@ -196,23 +232,23 @@
       .toplevel {
         top: 60px;
       }
-      .logo-holder{
+      .logo-holder {
         width: 25%;
       }
-      .searchresult{
+      .searchresult {
         margin-top: 0.05rem;
       }
       .search-contanier {
         width: 80%
       }
-      .slug{
+      .slug {
         h3 { 
           font-size: 1rem;
           margin-top: 1.3rem;
         }
       }
       .cat{
-          width:100%;
+          width: 100%;
         .ui.card, .ui.cards>.card {
             max-width: 44.5%;
         }
