@@ -1,258 +1,258 @@
 
 .container {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: justify;
 
-    .midlevel {
-      flex: 1;
-    }
-    .result-header {
-      display: flex;
-      align-items: center;
-      border-bottom: 1.5px solid whitesmoke; 
-    }
-
-    .logo-holder {
-      width: 10%;
-      margin: 1rem 2% 1.5rem 1.5rem;
-      img {
-        width: 100%;
-      }
-
-    }
-  
-    .result-sta {
-      margin: 0.7rem;
-      margin-right: 5rem;
-
-      .sk-hits-stats__info {
-        font-size: 18px;
-        color: #1c87cd;
-      }
-
-    }
-
-    .aside {
-      border: solid 2px red;
-      min-width: 20%;
-    }
-    .searchresult{
-      margin-top: 0.85rem;
-      width: 45%;
-    }
-    .cat {
-      width: 71.6%;
-      margin: 1rem auto;
-
-      .ui.cards {
-        margin: 0;
-
-        .card:hover {
-          background-color: green;
-          color: #E0E0E0;
-        }
-
-      }
-
-      .ui.card, .ui.cards>.card {
-        max-width: 18%;
-      }
-    }
-      a {
-        text-decoration: none;
-        color: #2e2a65;
-      }
-  
-      .bsk-search-box__textox {
-        border: soild 2px red;
-      }
-  
-      .sk-layout__top-bar {
-        background-color: #ffffff;
-        height: 53px;
-      }
-
-      .result {
-        display: flex;
-      }
-
-      .sk-hits-grid-hit {
-        max-width: 24%;
-        flex: 24% 0 0;
-        max-height: 350px;
-      }
-
-      .sk-hits-grid-hit:hover {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      }
-
-      .sk-hits-grid-hit__brand {
-        border-bottom: solid 1px #1c87cd;
-        width: 100%;
-        font-size: 0.93rem;
-      }
-      .sk-hits-grid-hit__title {
-        min-height: 50px;
-        font-size: 13px;
-        color: black;
-      }
-
-      .sk-action-bar-row {
-        margin: 0.5rem 0 0 0.5rem;
-      }
-
-      .sk-hits-grid-hit__imageUrl {
-        img {
-          max-height: 180px;
-        }
-
-      }
-
-      .price {
-        color: red;
-      }
-  
-      .sk-search-box input.sk-search-box__text {
-        background: #fafafa;
-        color: #0a0909;
-        background: transparent;
-      }
-  
-    .toplevel {
-      width: 25%;
-      position: relative;
-      top:5rem;
-      margin:0 auto;
-  
-      img {
-        width: 100%;
-      }
-
-    }
-    .search-contanier {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      width: 50%;
-      position: relative;
-      margin:5rem auto;
-      margin-bottom: 0px;
-    }
-
-    .hitvalue {
-      max-width: 70%;
-      margin: 0 auto;
-    }
-    .sk-layout__body,
-    .sk-layout__top-bar {
-      width: 50%;
-      margin-left: 26%;
-    }
-    .sk-top-bar__content {
-      div {
-        width: 100%;
-      }
-    }
-
-    .slug {
-      h3 { 
-        font-weight: bold;
-        font-size: 1.40rem;
-        text-align: center;
-        font-family: 'Courier New', Courier, monospace;
-        margin-top: 1.3rem;
-      }
-    }
-    .footer{
-      background-color: #E0E0E0;
-      display: flex;
-      ul{ 
-        li{
-         list-style: none;
-         display: inline-flex;
-         padding-right: 0.95rem;
-        }
-      }
-    } 
+  .midlevel {
+    flex: 1;
   }
-  .page {
-    width: 12%;
-    padding: 0.8rem 1.5rem;
-    margin-left: 5rem;
+  .result-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1.5px solid whitesmoke; 
+  }
 
+  .logo-holder {
+    width: 10%;
+    margin: 1rem 2% 1.5rem 1.5rem;
     img {
-      width: 100%
+      width: 100%;
     }
-  }
-  
-  .page-details {
-    background-color: #ffffff;
-    border-bottom: 1.5px solid whitesmoke;
-    display: flex;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+
   }
 
-  .page-info {
-    margin: 0 5rem;
-    padding: 1.5rem;
-    position: relative;
-    top: 7rem;
-    width: 70%;
+  .result-sta {
+    margin: 0.7rem;
+    margin-right: 5rem;
 
-    a {
+    .sk-hits-stats__info {
+      font-size: 18px;
       color: #1c87cd;
     }
 
   }
 
-  .foot {
-    margin-top: 12rem;
+  .aside {
+    border: solid 2px red;
+    min-width: 20%;
   }
-
-  .search-grid {
+  .searchresult{
+    margin-top: 0.85rem;
     width: 45%;
-    margin-top: 1.9rem;
   }
+  .cat {
+    width: 71.6%;
+    margin: 1rem auto;
 
-  .error-main {
-    text-align: center;
+    .ui.cards {
+      margin: 0;
 
-   h1 {
-     color: #1c87cd;
-     font-size: 18rem;
-     font-weight: bold;
+      .card:hover {
+        background-color: green;
+        color: #E0E0E0;
+      }
+
     }
-    p{
-      font-size: 3rem;
-    }
-   }
-  @media only screen and (max-width: 560px){
-    .container {
-      .toplevel {
-        top: 60px;
-      }
-      .logo-holder {
-        width: 25%;
-      }
-      .searchresult {
-        margin-top: 0.05rem;
-      }
-      .search-contanier {
-        width: 80%
-      }
-      .slug {
-        h3 { 
-          font-size: 1rem;
-          margin-top: 1.3rem;
-        }
-      }
-      .cat{
-          width: 100%;
-        .ui.card, .ui.cards>.card {
-            max-width: 44.5%;
-        }
-      }
+
+    .ui.card, .ui.cards>.card {
+      max-width: 18%;
     }
   }
-  
+    a {
+      text-decoration: none;
+      color: #2e2a65;
+    }
+
+    .bsk-search-box__textox {
+      border: soild 2px red;
+    }
+
+    .sk-layout__top-bar {
+      background-color: #ffffff;
+      height: 53px;
+    }
+
+    .result {
+      display: flex;
+    }
+
+    .sk-hits-grid-hit {
+      max-width: 24%;
+      flex: 24% 0 0;
+      max-height: 350px;
+    }
+
+    .sk-hits-grid-hit:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .sk-hits-grid-hit__brand {
+      border-bottom: solid 1px #1c87cd;
+      width: 100%;
+      font-size: 0.93rem;
+    }
+    .sk-hits-grid-hit__title {
+      min-height: 50px;
+      font-size: 13px;
+      color: black;
+    }
+
+    .sk-action-bar-row {
+      margin: 0.5rem 0 0 0.5rem;
+    }
+
+    .sk-hits-grid-hit__imageUrl {
+      img {
+        max-height: 180px;
+      }
+
+    }
+
+    .price {
+      color: red;
+    }
+
+    .sk-search-box input.sk-search-box__text {
+      background: #fafafa;
+      color: #0a0909;
+      background: transparent;
+    }
+
+  .toplevel {
+    width: 25%;
+    position: relative;
+    top:5rem;
+    margin:0 auto;
+
+    img {
+      width: 100%;
+    }
+
+  }
+  .search-contanier {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 50%;
+    position: relative;
+    margin:5rem auto;
+    margin-bottom: 0px;
+  }
+
+  .hitvalue {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .sk-layout__body,
+  .sk-layout__top-bar {
+    width: 50%;
+    margin-left: 26%;
+  }
+  .sk-top-bar__content {
+    div {
+      width: 100%;
+    }
+  }
+
+  .slug {
+    h3 { 
+      font-weight: bold;
+      font-size: 1.40rem;
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      margin-top: 1.3rem;
+    }
+  }
+  .footer{
+    background-color: #E0E0E0;
+    display: flex;
+    ul{ 
+      li{
+       list-style: none;
+       display: inline-flex;
+       padding-right: 0.95rem;
+      }
+    }
+  } 
+}
+.page {
+  width: 12%;
+  padding: 0.8rem 1.5rem;
+  margin-left: 5rem;
+
+  img {
+    width: 100%
+  }
+}
+
+.page-details {
+  background-color: #ffffff;
+  border-bottom: 1.5px solid whitesmoke;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.page-info {
+  margin: 0 5rem;
+  padding: 1.5rem;
+  position: relative;
+  top: 7rem;
+  width: 70%;
+
+  a {
+    color: #1c87cd;
+  }
+
+}
+
+.foot {
+  margin-top: 12rem;
+}
+
+.search-grid {
+  width: 45%;
+  margin-top: 1.9rem;
+}
+
+.error-main {
+  text-align: center;
+
+ h1 {
+   color: #1c87cd;
+   font-size: 18rem;
+   font-weight: bold;
+  }
+  p{
+    font-size: 3rem;
+  }
+ }
+@media only screen and (max-width: 560px){
+  .container {
+    .toplevel {
+      top: 60px;
+    }
+    .logo-holder {
+      width: 25%;
+    }
+    .searchresult {
+      margin-top: 0.05rem;
+    }
+    .search-contanier {
+      width: 80%
+    }
+    .slug {
+      h3 { 
+        font-size: 1rem;
+        margin-top: 1.3rem;
+      }
+    }
+    .cat{
+        width: 100%;
+      .ui.card, .ui.cards>.card {
+          max-width: 44.5%;
+      }
+    }
+  }
+}
