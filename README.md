@@ -1,6 +1,6 @@
 **PriceBay**
 
-PriceBay is an online platform that provides its users with latest technology to compare product price across multiple store
+PriceBay is an online platform that provides its users with latest technology to compare product price across multiple ecommerce stores in nigeria
 
 **Product Vision**
 
@@ -38,6 +38,10 @@ This is how you will run the tests for the system: `$ npm test`
 - [React](https://facebook.github.io/react/) - The Javascript library used
 
 - [NodeJS](https://nodejs.org/en/)
+
+- [Express](https://expressjs.com/)
+
+- [SearchKit](http://searchkit.co/)
 
 - [SCSS](http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html) - The CSS preprocessor used
 
